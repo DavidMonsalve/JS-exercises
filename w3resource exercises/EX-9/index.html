@@ -1,0 +1,51 @@
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="app">
+            <h1>Simple calculator</h1>
+            <input type="text" id="1stNumber" class="inputIN" placeholder="first number: ">
+            <input type="text" id="2ndNumber" class="inputIN" placeholder="second number: ">
+
+            <div class="app-buttons">
+                <input type="button" onclick="multiply()" value="Multiply" class="inputBUT">
+                <input type="button" onclick="divide()" value="Divide" class="inputBUT">
+            </div>
+            <p>Result:</p>
+            <p id="result"></p>
+        </div>
+    </main>
+    <script>
+        function multiply()
+        {
+            num1 = document.getElementById("1stNumber").value
+            num2 = document.getElementById("2ndNumber").value
+            document.getElementById("result").innerHTML = num1 * num2
+        }
+
+        function divide()
+        {
+            num1 = document.getElementById("1stNumber").value
+            num2 = document.getElementById("2ndNumber").value
+            document.getElementById("result").innerHTML = num1 / num2
+        }
+    </script>
+</body>
+</html>
